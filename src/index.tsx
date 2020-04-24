@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { MobxRouter, startRouter } from 'mobx-router-typescript';
+
+import { StoreProvider } from "./context/store-context";
+
+//mobx
+import store from './mobx/store';
+
+//router
+import routes from './config/routes';
+
+startRouter(routes, store);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  <StoreProvider value={store}>
+    <div>
+      <h1>{store.app.title}</h1>
+      <button onClick={() => store.router.goTo(routes.home)}> go home</button>
+      <MobxRouter store={store} />
+    </div>
+  </StoreProvider>, document.getElementById('root')
+)
