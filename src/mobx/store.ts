@@ -1,11 +1,16 @@
-import { RouterStore } from 'mobx-router-typescript';
+import { RouterStore } from 'mobx-router';
 import AppStore from './stores/app-store';
 
-export type RootStore = typeof store;
+export class RootStore {
+  public router: RouterStore<RootStore>;
+  public app: AppStore;
 
-const store = {
-  app: new AppStore(),
-  router: new RouterStore()
-};
+  constructor() {
+    this.router = new RouterStore<RootStore>(this);
+    this.app = new AppStore();
+  }
+}
+
+const store = new RootStore();
 
 export default store;

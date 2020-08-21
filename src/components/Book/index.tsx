@@ -8,8 +8,8 @@ export const Book = observer(() => {
 
   return (
     <div>
-      <h1> Book {params.id} </h1>
-      <h3> Page: {params.page} </h3>
+      <h1> Book {params?.id} </h1>
+      <h3> Page: {params?.page} </h3>
     </div>
   );
 });

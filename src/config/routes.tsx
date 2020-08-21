@@ -1,7 +1,7 @@
 import React from 'react';
 
 //models
-import { Route } from 'mobx-router-typescript';
+import { Route } from 'mobx-router';
 
 //components
 import { Home } from '../components/Home';
@@ -32,7 +32,7 @@ const routes = {
       console.log('params changed to', params);
     }
   }),
-  gallery: new Route<RootStore, {}, { foo?: string }>({
+  gallery: new Route<RootStore, any, any>({
     path: '/gallery',
     component: <Gallery />,
     beforeExit: () => {
@@ -43,7 +43,7 @@ const routes = {
       console.log('queryParams', queryParams);
     }
   }),
-  document: new Route<RootStore, { id: number }>({
+  document: new Route<RootStore, {}, { id: number }>({
     path: '/document/:id',
     component: <Document />,
     beforeEnter: (route, params, store) => {
@@ -57,7 +57,7 @@ const routes = {
       console.log(`entering document with params`, params);
     }
   }),
-  book: new Route<RootStore, {
+  book: new Route<RootStore, {}, {
     id: string,
     page: string,
   }>({

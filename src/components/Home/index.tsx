@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import { Link } from 'mobx-router-typescript';
+import { Link } from 'mobx-router';
 import views from '../../config/routes';
 import { useContext } from 'react';
 import { StoreContext } from '../../context/store-context';
@@ -13,23 +13,23 @@ export const Home = observer(() => {
     <div>
       <h3> Home </h3>
 
-      <Link view={views.gallery} store={store}> Go to gallery </Link>
+      <Link router={store.router} route={views.gallery}> Go to gallery </Link>
 
       <br />
       <br />
-      <Link view={views.gallery} store={store} queryParams={{ start: 5 }}>
+      <Link router={store.router} route={views.gallery} queryParams={{ start: 5 }}>
         Go to gallery and start from 5th image
         </Link>
 
       <br />
       <br />
 
-      <Link view={views.document} params={{ id: 456 }} title="Go to document 456" store={store} />
+      <Link router={store.router} route={views.document} params={{ id: 456 }} title="Go to document 456" />
 
       <br />
       <br />
 
-      <Link view={views.document} params={{ id: 999 }} store={store}>
+      <Link router={store.router} route={views.document} params={{ id: 999 }}>
         <div style={{ display: 'inline-block' }}>
           Go to document <b> 999 </b>
         </div>
@@ -38,17 +38,17 @@ export const Home = observer(() => {
       <br />
       <br />
 
-      <button onClick={() => goTo(views.document, { id: 123 }, store)}> Go to document 123</button>
+      <button onClick={() => goTo(views.document, { id: 123 })}> Go to document 123</button>
 
       <br />
       <br />
 
-      <Link view={views.book} params={{ id: 250, page: 130 }} title="Go to book 250, page 130" store={store} />
+      <Link router={store.router} route={views.book} params={{ id: 250, page: 130 }} title="Go to book 250, page 130" />
 
       <br />
       <br />
 
-      <button onClick={() => goTo(views.userProfile, { username: 'kitze', tab: 'articles' }, store)}>
+      <button onClick={() => goTo(views.userProfile, { username: 'kitze', tab: 'articles' })}>
         go to user kitze
         </button>
 

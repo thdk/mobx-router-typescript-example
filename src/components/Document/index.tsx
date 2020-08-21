@@ -11,7 +11,7 @@ export const Document = observer(() => {
   return (
     <div>
       <h3> Document </h3>
-      <div> with id: {params.id} </div>
+      <div> with id: {params?.id} </div>
     </div>
   );
 });
