@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mobx-router-typescript-example/precache-manifest.f690e0253165490565b5c5277d0594cf.js"
+  "/mobx-router-typescript-example/precache-manifest.02fabdef7368c48ef172b57e1ab3b8a7.js"
 );
 
 self.addEventListener('message', (event) => {
