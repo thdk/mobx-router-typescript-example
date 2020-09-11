@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48285f357034945183b108338d3127a9",
+    "revision": "5d523dfe03d6d3eaa110c46685788424",
     "url": "/mobx-router-typescript-example/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mobx-router-typescript-example/static/js/2.3f50efa5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ef92830c4cab618da380",
-    "url": "/mobx-router-typescript-example/static/js/main.4f3e9250.chunk.js"
+    "revision": "34ea910e242bfa643c2d",
+    "url": "/mobx-router-typescript-example/static/js/main.4ac93a0f.chunk.js"
   },
   {
     "revision": "3dedc1487a0ca394fb71",
