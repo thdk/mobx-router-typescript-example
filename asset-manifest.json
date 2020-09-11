@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/mobx-router-typescript-example/static/js/main.4ac93a0f.chunk.js",
-    "main.js.map": "/mobx-router-typescript-example/static/js/main.4ac93a0f.chunk.js.map",
-    "runtime-main.js": "/mobx-router-typescript-example/static/js/runtime-main.910d6bcf.js",
-    "runtime-main.js.map": "/mobx-router-typescript-example/static/js/runtime-main.910d6bcf.js.map",
-    "static/js/2.3f50efa5.chunk.js": "/mobx-router-typescript-example/static/js/2.3f50efa5.chunk.js",
-    "static/js/2.3f50efa5.chunk.js.map": "/mobx-router-typescript-example/static/js/2.3f50efa5.chunk.js.map",
-    "index.html": "/mobx-router-typescript-example/index.html",
-    "precache-manifest.f690e0253165490565b5c5277d0594cf.js": "/mobx-router-typescript-example/precache-manifest.f690e0253165490565b5c5277d0594cf.js",
-    "service-worker.js": "/mobx-router-typescript-example/service-worker.js",
-    "static/js/2.3f50efa5.chunk.js.LICENSE.txt": "/mobx-router-typescript-example/static/js/2.3f50efa5.chunk.js.LICENSE.txt"
+    "main.js": "./static/js/main.4ac93a0f.chunk.js",
+    "main.js.map": "./static/js/main.4ac93a0f.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.ecf8a449.js",
+    "runtime-main.js.map": "./static/js/runtime-main.ecf8a449.js.map",
+    "static/js/2.ba0c1ea6.chunk.js": "./static/js/2.ba0c1ea6.chunk.js",
+    "static/js/2.ba0c1ea6.chunk.js.map": "./static/js/2.ba0c1ea6.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.3fb4050e2e863dd1528b8ce7df5e7e2d.js": "./precache-manifest.3fb4050e2e863dd1528b8ce7df5e7e2d.js",
+    "service-worker.js": "./service-worker.js",
+    "static/js/2.ba0c1ea6.chunk.js.LICENSE.txt": "./static/js/2.ba0c1ea6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.910d6bcf.js",
-    "static/js/2.3f50efa5.chunk.js",
+    "static/js/runtime-main.ecf8a449.js",
+    "static/js/2.ba0c1ea6.chunk.js",
     "static/js/main.4ac93a0f.chunk.js"
   ]
 }
