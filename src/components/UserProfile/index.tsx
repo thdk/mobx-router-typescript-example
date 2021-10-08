@@ -30,14 +30,14 @@ export const UserProfile = observer(() => {
       <h3> Friends: </h3>
       <ul>
         <li>
-          <button onClick={() => goTo(views.userProfile, { ...params, username: 'kristijan' }, store)}>
+          <button onClick={() => goTo(views.userProfile, { ...params, username: 'kristijan' })}>
             Kristijan Ristovski
             </button>
         </li>
         <li>
-          <button onClick={() => goTo(views.userProfile, { ...params, username: 'john' }, store)}>
+          <button onClick={() => goTo(views.userProfile, { ...params, username: 'john' })}>
             John Doe
-                </button>
+          </button>
         </li>
       </ul>
 
@@ -47,7 +47,7 @@ export const UserProfile = observer(() => {
         map(tabs, (tab, key) => <button
           key={key}
           style={{ ...params?.tab === tab.id && { backgroundColor: 'blue', color: 'white' } }}
-          onClick={() => goTo(views.userProfile, { ...(params as { username: string, tab?: string }), tab: tab.id }, store)}>
+          onClick={() => goTo(views.userProfile, { ...(params as { username: string, tab?: string }), tab: tab.id })}>
           {tab.name}
         </button>
         )}
