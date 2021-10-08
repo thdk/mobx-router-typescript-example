@@ -6,9 +6,9 @@
   "dependencies": {
     "director": "1.2.8",
     "lodash": "^4.17.4",
-    "mobx": "^5.15.4",
+    "mobx": "^6.3.3",
     "mobx-react-lite": "^2.0.6",
-    "mobx-router": "^0.2.11",
+    "mobx-router": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
